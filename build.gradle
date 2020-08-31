@@ -9,23 +9,23 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
-        maven{
-            url 'http://localhost:8081/repository/imooc_release/'
-            credentials{
-                username 'admin'
-                password 'admin123'
-            }
-        }
+//        maven{
+//            url 'http://localhost:8081/repository/imooc_release/'
+//            credentials{
+//                username 'admin'
+//                password 'admin123'
+//            }
+//        }
         maven {
             url "https://jitpack.io"
         }
-        maven{
-            url 'http://localhost:8081/repository/imooc_snapshots/'
-            credentials{
-                username 'admin'
-                password 'admin123'
-            }
-        }
+//        maven{
+//            url 'http://localhost:8081/repository/imooc_snapshots/'
+//            credentials{
+//                username 'admin'
+//                password 'admin123'
+//            }
+//        }
         
     }
     dependencies {
@@ -45,23 +45,23 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven{
-            url 'http://localhost:8081/repository/imooc_release/'
-            credentials{
-                username 'admin'
-                password 'admin'
-            }
-        }
+//        maven{
+//            url 'http://localhost:8081/repository/imooc_release/'
+//            credentials{
+//                username 'admin'
+//                password 'admin'
+//            }
+//        }
         maven {
             url "https://jitpack.io"
         }
-        maven{
-            url 'http://localhost:8081/repository/imooc_snapshots/'
-            credentials{
-                username 'admin'
-                password 'admin'
-            }
-        }
+//        maven{
+//            url 'http://localhost:8081/repository/imooc_snapshots/'
+//            credentials{
+//                username 'admin'
+//                password 'admin'
+//            }
+//        }
     }
 }
 

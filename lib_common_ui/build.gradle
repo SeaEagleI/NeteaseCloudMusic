@@ -23,26 +23,26 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation this.rootProject.depsLibs.magicindicator
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
     implementation 'com.android.support:recyclerview-v7:25.4.0'
     compileOnly this.rootProject.depsLibs.appcompat
     compileOnly 'com.github.donkingliang:GroupedRecyclerViewAdapter:1.3.7'
     implementation this.rootProject.depsLibs.eventbus
-    compile 'me.yokeyword:eventbus-activity-scope:1.1.0'
-    compile 'com.android.support:support-v4:25.3.1'
+    api 'me.yokeyword:eventbus-activity-scope:1.1.0'
+    api 'com.android.support:support-v4:25.3.1'
     //compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:27.1.1'
-    compile 'com.android.support:multidex:1.0.1'
+    api 'com.android.support:design:27.1.1'
+    api 'com.android.support:multidex:1.0.1'
     //Fragmentation依赖
-    compile 'me.yokeyword:fragmentation:1.2.4'
+    api 'me.yokeyword:fragmentation:1.2.4'
     // Swipeback is based on fragmentation. Refer to SwipeBackActivity/Fragment for your Customized SupportActivity/Fragment
-    compile 'me.yokeyword:fragmentation-swipeback:1.2.4'
+    api 'me.yokeyword:fragmentation-swipeback:1.2.4'
     //Banner依赖
-    compile 'com.bigkoo:convenientbanner:2.0.5'
-    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    api 'com.bigkoo:convenientbanner:2.0.5'
+    api 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
     implementation rootProject.depsLibs.glide
     //ButterKnife依赖
-    compile 'com.jakewharton:butterknife:8.4.0'
+    api 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 
     implementation 'com.lxj:xpopup:1.8.10'

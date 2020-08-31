@@ -66,12 +66,12 @@ public class PhoneLoginDelegate extends NeteaseDelegate {
 		 */
 		final String phone = mPhone.getText().toString();
 		final String password = mEtPassword.getText().toString();
-		RequestCenter.login("18561762719", "19971003Zrplove", new DisposeDataListener() {
+		RequestCenter.login(phone, password, new DisposeDataListener() {
 			@Override
 			public void onSuccess(Object responseObj) {
 				LoginBean bean = (LoginBean) responseObj;
 				Toast.makeText(getContext(), bean.getProfile().getNickname()+ "登陆成功", Toast.LENGTH_LONG).show();
-				SharePreferenceUtil.getInstance(getContext()).saveUserInfo(bean, "18561762719");
+				SharePreferenceUtil.getInstance(getContext()).saveUserInfo(bean, phone);
 				getSupportDelegate().startWithPop(new BaseDelegate());
 			}
 
