@@ -61,8 +61,8 @@ public class PhoneLoginDelegate extends NeteaseDelegate {
 	@OnClick(R2.id.tv_login_login)
 	void onClickLogin(){
 		/*
-		 * phone :18561762719
-		 * password :19971003Zrplove
+		 * phone :13940200592
+		 * password :wdj1234567
 		 */
 		final String phone = mPhone.getText().toString();
 		final String password = mEtPassword.getText().toString();

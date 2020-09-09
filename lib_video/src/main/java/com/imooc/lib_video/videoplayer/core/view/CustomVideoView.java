@@ -476,35 +476,23 @@ public class CustomVideoView extends RelativeLayout
 			}
 		}
 	}
-
 	/**
 	 * 供slot层来实现具体点击逻辑,具体逻辑还会变，
 	 * 如果对UI的点击没有具体监测的话可以不回调
 	 */
 	public interface ADVideoPlayerListener {
-
 		void onBufferUpdate(int time);
-
 		void onClickFullScreenBtn();
-
 		void onClickVideo();
-
 		void onClickBackBtn();
-
 		void onClickPlay();
-
 		void onAdVideoLoadSuccess();
-
 		void onAdVideoLoadFailed();
-
 		void onAdVideoLoadComplete();
 	}
-
 	public interface ADFrameImageLoadListener {
-
 		void onStartFrameLoad(String url, ImageLoaderListener listener);
 	}
-
 	public interface ImageLoaderListener {
 		/**
 		 * 如果图片下载不成功，传null
